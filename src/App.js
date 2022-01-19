@@ -17,7 +17,7 @@ function App() {
         >
           Learn React
         </a>
-      
+      <Headers/>
     </div>
   );
 }
