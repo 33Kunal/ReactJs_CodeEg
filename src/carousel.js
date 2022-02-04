@@ -76,19 +76,19 @@ const collectionList = [
   },
 ];
 
-const Nightlife = () => {
-  return (
-    <div>
-      <Collection list={collectionList} />
-      <div className="max-width">
-        <Filters filterList={nightFilters} />
-      </div>
-      <ExploreSection
-        restaurants={nightLifeList}
-        collectionName="Nightlife Restaurants in Pune"
-      />
-    </div>
-  );
-};
+// const Nightlife = () => {
+//   return (
+//     <div>
+//       <Collection list={collectionList} />
+//       <div className="max-width">
+//         <Filters filterList={nightFilters} />
+//       </div>
+//       <ExploreSection
+//         restaurants={nightLifeList}
+//         collectionName="Nightlife Restaurants in Pune"
+//       />
+//     </div>
+//   );
+// };
 
 export default Nightlife;
