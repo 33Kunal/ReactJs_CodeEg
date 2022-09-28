@@ -105,6 +105,7 @@ h2 {
 }
 #footer {
   padding: 35px 20px;
+  font-display: flex;
   background-color: #343a40b0;
   justify-content: center;
   color: rgb(153, 153, 153);
