@@ -130,5 +130,5 @@ h2 {
   }
 } */
 #root{
-  @apply flex flex-col
+  @apply flex flex-col flex
 }
