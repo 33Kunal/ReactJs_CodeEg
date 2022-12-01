@@ -150,3 +150,7 @@ h2 {
   font-weight: bold;
   text-decoration: none;
 }
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
