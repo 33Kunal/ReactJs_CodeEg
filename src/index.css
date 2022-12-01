@@ -154,3 +154,13 @@ h2 {
   display: flex;
   list-style: none;
 }
+.navbar-item {
+  margin-left: 1rem;
+}
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
