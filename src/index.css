@@ -164,3 +164,7 @@ h2 {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+
+.navbar-menu.active a:nth-child(1) {
+  transition-delay: 0.1s;
+}
