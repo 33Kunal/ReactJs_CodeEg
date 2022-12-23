@@ -168,3 +168,15 @@ h2 {
 .navbar-menu.active a:nth-child(1) {
   transition-delay: 0.1s;
 }
+
+.navbar-menu.active a:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.navbar-menu.active a:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.navbar-menu.active a:nth-child(5) {
+  transition-delay: 0.5s;
+}
