@@ -22,6 +22,14 @@ function App() {
     playerReady: false,
     playerSelected: false
   };
+   async handleState(state) {
+    if (state) {
+      this.props.setStatus(state);
+    } else {
+      this.clearStatePolling();
+      await this.waitForDeviceToBeSelected();
+    }
+  }
 
     </div>
   );
