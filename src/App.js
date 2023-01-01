@@ -30,6 +30,17 @@ function App() {
       await this.waitForDeviceToBeSelected();
     }
   }
+  waitForSpotify() {
+    return new Promise(resolve => {
+      if ('Spotify' in window) {
+        resolve();
+      } else {
+        window.onSpotifyWebPlaybackSDKReady = () => {
+          resolve();
+        };
+      }
+    });
+  }
 
     </div>
   );
