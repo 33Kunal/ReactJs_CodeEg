@@ -18,6 +18,11 @@ function App() {
           Learn React
         </a>
       </header>
+      state = {
+    playerReady: false,
+    playerSelected: false
+  };
+
     </div>
   );
 }
