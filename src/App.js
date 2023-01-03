@@ -41,6 +41,21 @@ function App() {
       }
     });
   }
+   waitForDeviceToBeSelected() {
+    return new Promise(resolve => {
+      this.deviceSelectedInterval = setInterval(() => {
+        if (this.webPlaybackInstance) {
+          this.webPlaybackInstance.getCurrentState().then(state => {
+            if (state !== null) {
+              this.startStatePolling();
+              clearInterval(this.deviceSelectedInterval);
+              resolve(state);
+            }
+          });
+        }
+      });
+    });
+  }
 
     </div>
   );
