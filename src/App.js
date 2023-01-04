@@ -55,6 +55,12 @@ function App() {
         }
       });
     });
+    tartStatePolling() {
+      this.statePollingInterval = setInterval(async () => {
+        let state = await this.webPlaybackInstance.getCurrentState();
+        await this.handleState(state);
+      }, this.props.playerRefreshRateMs || 1000);
+    }
   }
 
     </div>
