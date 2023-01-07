@@ -62,6 +62,9 @@ function App() {
       }, this.props.playerRefreshRateMs || 1000);
     }
   }
+    clearStatePolling() {
+    clearInterval(this.statePollingInterval);
+  }
 
     </div>
   );
