@@ -65,6 +65,8 @@ function App() {
     clearStatePolling() {
     clearInterval(this.statePollingInterval);
   }
+sync setupWebPlaybackEvents() {
+    let { Player } = window.Spotify;
 
     </div>
   );
