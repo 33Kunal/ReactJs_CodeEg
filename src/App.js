@@ -67,7 +67,16 @@ function App() {
   }
 sync setupWebPlaybackEvents() {
     let { Player } = window.Spotify;
-
+    this.webPlaybackInstance = new Player({
+      name: this.props.playerName,
+      volume: this.props.playerInitialVolume,
+      getOAuthToken: async callback => {
+        if (typeof this.props.onPlayerRequestAccessToken !== 'undefined') {
+          let userAccessToken = await this.props.onPlayerRequestAccessToken();
+          callback(userAccessToken);
+        }
+      }
+    });
     </div>
   );
 }
