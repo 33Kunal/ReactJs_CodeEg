@@ -80,6 +80,9 @@ sync setupWebPlaybackEvents() {
     this.webPlaybackInstance.on('initialization_error', e => {
       this.props.onPlayerError(e.message);
     });
+    this.webPlaybackInstance.on('authentication_error', e => {
+      this.props.onPlayerError(e.message);
+    });
     </div>
   );
 }
