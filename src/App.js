@@ -89,6 +89,10 @@ sync setupWebPlaybackEvents() {
     this.webPlaybackInstance.on('playback_error', e => {
       this.props.onPlayerError(e.message);
     });
+    this.webPlaybackInstance.on('player_state_changed', async state => {
+      await this.handleState(state);
+    });
+
     </div>
   );
 }
