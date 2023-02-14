@@ -96,6 +96,10 @@ sync setupWebPlaybackEvents() {
       this.props.setDeviceId(data.device_id);
       this.props.setActiveDevice(data.device_id);
     });
+    if (this.props.playerAutoConnect) {
+      this.webPlaybackInstance.connect();
+    }
+  }
 
     </div>
   );
