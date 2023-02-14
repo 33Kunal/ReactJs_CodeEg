@@ -92,6 +92,10 @@ sync setupWebPlaybackEvents() {
     this.webPlaybackInstance.on('player_state_changed', async state => {
       await this.handleState(state);
     });
+    this.webPlaybackInstance.on('ready', data => {
+      this.props.setDeviceId(data.device_id);
+      this.props.setActiveDevice(data.device_id);
+    });
 
     </div>
   );
