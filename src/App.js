@@ -100,6 +100,12 @@ sync setupWebPlaybackEvents() {
       this.webPlaybackInstance.connect();
     }
   }
+  setupWaitingForDevice() {
+    return new Promise(resolve => {
+      this.webPlaybackInstance.on('ready', data => {
+        resolve(data);
+      });
+    });
 
     </div>
   );
