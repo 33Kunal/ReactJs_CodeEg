@@ -106,6 +106,12 @@ sync setupWebPlaybackEvents() {
         resolve(data);
       });
     });
+    sync componentWillMount() {
+      // Notify the player is loading
+      this.props.onPlayerLoading();
+  
+      // Wait for Spotify to load player
+      await this.waitForSpotify();
 
     </div>
   );
