@@ -114,7 +114,9 @@ sync setupWebPlaybackEvents() {
       await this.waitForSpotify();
       // Setup the instance and the callbacks
     await this.setupWebPlaybackEvents();
-
+    // Wait for device to be ready
+    let device_data = await this.setupWaitingForDevice();
+    this.props.onPlayerWaitingForDevice(device_data);
     </div>
   );
 }
