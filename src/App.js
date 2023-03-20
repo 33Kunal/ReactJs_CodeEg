@@ -112,6 +112,8 @@ sync setupWebPlaybackEvents() {
   
       // Wait for Spotify to load player
       await this.waitForSpotify();
+      // Setup the instance and the callbacks
+    await this.setupWebPlaybackEvents();
 
     </div>
   );
