@@ -117,6 +117,11 @@ sync setupWebPlaybackEvents() {
     // Wait for device to be ready
     let device_data = await this.setupWaitingForDevice();
     this.props.onPlayerWaitingForDevice(device_data);
+    
+    // Wait for device to be selected
+    await this.waitForDeviceToBeSelected();
+    this.props.onPlayerDeviceSelected();
+  }
     </div>
   );
 }
