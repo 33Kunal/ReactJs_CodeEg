@@ -122,6 +122,12 @@ sync setupWebPlaybackEvents() {
     await this.waitForDeviceToBeSelected();
     this.props.onPlayerDeviceSelected();
   }
+  const mapDispatchToProps = dispatch => {
+    return bindActionCreators(
+      { setDeviceId, setActiveDevice, setStatus },
+      dispatch
+    );
+  };
     </div>
   );
 }
