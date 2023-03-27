@@ -65,7 +65,7 @@ function App() {
     clearStatePolling() {
     clearInterval(this.statePollingInterval);
   }
-sync setupWebPlaybackEvents() {
+{/* sync setupWebPlaybackEvents() {
     let { Player } = window.Spotify;
     this.webPlaybackInstance = new Player({
       name: this.props.playerName,
@@ -106,7 +106,7 @@ sync setupWebPlaybackEvents() {
         resolve(data);
       });
     });
-    sync componentWillMount() {
+    sync componentWillMount() { */}
       // Notify the player is loading
       this.props.onPlayerLoading();
   
