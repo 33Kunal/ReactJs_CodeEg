@@ -55,6 +55,10 @@ function App() {
         }
       });
     });
+    export default connect(
+      null,
+      mapDispatchToProps
+    )(WebPlayback);
   //   tartStatePolling() {
   //     this.statePollingInterval = setInterval(async () => {
   //       let state = await this.webPlaybackInstance.getCurrentState();
