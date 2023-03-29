@@ -19,9 +19,9 @@ function App() {
         </a>
       </header>
       state = {
-    playerReady: false,
-    playerSelected: false
-  };
+  //   playerReady: false,
+  //   playerSelected: false
+  // };
    async handleState(state) {
     if (state) {
       this.props.setStatus(state);
@@ -55,16 +55,16 @@ function App() {
         }
       });
     });
-    tartStatePolling() {
-      this.statePollingInterval = setInterval(async () => {
-        let state = await this.webPlaybackInstance.getCurrentState();
-        await this.handleState(state);
-      }, this.props.playerRefreshRateMs || 1000);
-    }
-  }
-    clearStatePolling() {
-    clearInterval(this.statePollingInterval);
-  }
+  //   tartStatePolling() {
+  //     this.statePollingInterval = setInterval(async () => {
+  //       let state = await this.webPlaybackInstance.getCurrentState();
+  //       await this.handleState(state);
+  //     }, this.props.playerRefreshRateMs || 1000);
+  //   }
+  // }
+  //   clearStatePolling() {
+  //   clearInterval(this.statePollingInterval);
+  // }
 {/* sync setupWebPlaybackEvents() {
     let { Player } = window.Spotify;
     this.webPlaybackInstance = new Player({
