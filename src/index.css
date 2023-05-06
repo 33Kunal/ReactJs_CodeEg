@@ -6,3 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.header {
+  position: relative;
+  top: -10px;
+  background: rgba(255, 217, 0, 0.541);
+  padding: 2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.89);
+}
