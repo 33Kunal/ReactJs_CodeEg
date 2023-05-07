@@ -14,3 +14,8 @@ body {
   padding: 2em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.89);
 }
+.header h1,
+h2 {
+  margin: 10px;
+  font-family: 'Bungee Inline', cursive;
+}
