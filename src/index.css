@@ -19,3 +19,6 @@ h2 {
   margin: 10px;
   font-family: 'Bungee Inline', cursive;
 }
+.header h1 {
+  font-size: 8vw;
+}
