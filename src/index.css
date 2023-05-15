@@ -48,3 +48,9 @@ h2 {
   border: 1.5px solid #ffffffa2;
   margin-top: 20px;
 }
+.flex li:hover {
+  /* transform: scale(1.1); */
+  -webkit-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
+}
