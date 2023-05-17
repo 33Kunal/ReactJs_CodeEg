@@ -54,3 +54,8 @@ h2 {
   -moz-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.75);
 }
+.flex li:hover .art-image {
+  -webkit-animation: spin 0.4s linear;
+  -moz-animation: spin 0.4s linear;
+  animation: spin 0.4s linear;
+}
