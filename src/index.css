@@ -75,3 +75,7 @@ h2 {
     transform: rotate(360deg);
   }
 }
+.card {
+  width: calc(100% * (1 / 2));
+  margin: 20px 10px;
+}
