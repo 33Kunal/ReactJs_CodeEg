@@ -78,4 +78,20 @@ h2 {
 .card {
   width: calc(100% * (1 / 2));
   margin: 20px 10px;
+  
+}
+.art-image {
+  /* position: relative;
+  top: -66px; */
+  width: 27vw;
+  height: 27vw;
+  /* height: 27vw; */
+  vertical-align: middle;
+  /* border-radius: 50%; */
+  border-radius: 10%;
+  border: 3.5px solid #ffffffa2;
+  padding: 5px;
+  background: #948b7a;
+  object-fit: cover;
+  margin-top: 20px; /*Extra */
 }
