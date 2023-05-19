@@ -95,3 +95,11 @@ h2 {
   object-fit: cover;
   margin-top: 20px; /*Extra */
 }
+
+.author {
+  font-size: 1.2em;
+  color: #524b3f;
+  text-transform: capitalize;
+  padding: 7px 10px 15px 10px;
+  line-height: 15px;
+}
