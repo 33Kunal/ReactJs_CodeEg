@@ -103,3 +103,13 @@ h2 {
   padding: 7px 10px 15px 10px;
   line-height: 15px;
 }
+#footer {
+  padding: 35px 20px;
+  background-color: #343a40b0;
+  justify-content: center;
+  color: rgb(153, 153, 153);
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.89);
+}
+s
